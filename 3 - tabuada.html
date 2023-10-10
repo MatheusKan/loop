@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style type="text/css">
+        #resultado {
+            font-size: 50px;
+            font-family: "Comic Sans MS";
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Tabuada de qualquer número</h1>
+        <p id="resultado"></p>
+    </center>
+    <script>
+        let conta = Number(prompt("Digite o número da tabuada que que você quer: "))
+        if (conta >= 0) {
+            for (let i = 1; i < 11; i++) {
+                document.getElementById("resultado").innerHTML += conta * i + "<br>";
+            }
+        }
+    </script>
+</body>
+
+</html>

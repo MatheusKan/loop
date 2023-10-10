@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par</title>
+    <style type="text/css">
+        #resultado{
+            font-size: 50px;
+            font-family: "Comic Sans MS";
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Quais números são pares entre 100 e 1</h1>
+    <p id="resultado"></p></center>
+    <script>
+        for (let i = 100; i > 0; i--) {
+            if(i % 2 == 0)
+            document.getElementById("resultado").innerHTML += i + "<br>";    
+        }
+
+    </script>
+</body>
+</html>

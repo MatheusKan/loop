@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+    <style type="text/css">
+        p {
+            font-size: 50px;
+            font-family: "Comic Sans MS";
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>Adivinhe um número</h1>
+        <p id="resultado"></p>
+
+    </center>
+    <script>
+        let num1 = Number(prompt("Escolha um número entre 1 e 10: "))
+        let num2 = 0
+        let i = 0
+        if (num1 > 0 && num1 < 11) {
+            while (num1 != num2) {
+                num2 = Number(prompt("Adivinhe um número entre 1 e 10: "))
+                i++
+            }
+            document.getElementById("resultado").innerHTML = "Você acertou o número: " + num1 + " em : " + i + " vez(es)";
+        } else
+            document.getElementById("resultado").innerHTML = "Você digitou um número maior que 10 ou menor que 1"
+
+    </script>
+</body>
+
+</html>
