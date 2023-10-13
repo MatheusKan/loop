@@ -21,9 +21,11 @@
     </center>
     <script>
         let conta = Number(prompt("Digite o número da tabuada que que você quer: "))
+        let i = 1
         if (conta >= 0) {
-            for (let i = 1; i < 11; i++) {
+            while (i < 11) {
                 document.getElementById("resultado").innerHTML += conta * i + "<br>";
+                i++
             }
         }
     </script>

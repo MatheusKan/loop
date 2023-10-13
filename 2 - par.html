@@ -16,9 +16,11 @@
     <center><h1>Quais números são pares entre 100 e 1</h1>
     <p id="resultado"></p></center>
     <script>
-        for (let i = 100; i > 0; i--) {
+        let i = 100
+        while (i > 0) {
             if(i % 2 == 0)
-            document.getElementById("resultado").innerHTML += i + "<br>";    
+            document.getElementById("resultado").innerHTML += i + "<br>";
+            i--
         }
 
     </script>
